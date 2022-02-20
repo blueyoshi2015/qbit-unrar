@@ -1,7 +1,10 @@
 # qbit-unrar
 Script to automatically extract rar archives passing a variable from qBittorent
 
-This script reads the variable "%F" from qBittorrent and passes it to unrar to extract any .rar archives in the download.
+This script reads the variables "%N" and "%F" from qBittorrent and passes it to unrar to extract any .rar archives in the download.
+The script contains a variable for the log location and should be set according to your environment. Log file should be created prior to executing the command.
+
+This scipt is deployed within a docker container. The container I use is https://github.com/hotio/qbittorrent. 
 
 qBittorrent command:
-/home/qbit/autounrar.sh "%F"
+/config/scripts/unrar.sh "%N" "%F"
