@@ -1,5 +1,5 @@
 # qbit-unrar
-Script to automatically extract rar archives passing a variable from qBittorent
+Script to automatically extract rar archives passing variables from qBittorent
 
 This script reads the variables "%N" and "%F" from qBittorrent and passes it to unrar to extract any .rar archives in the download.
 The script contains a variable for the log location and should be set according to your environment. Log file should be created prior to executing the command.
